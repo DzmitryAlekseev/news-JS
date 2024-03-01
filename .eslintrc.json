@@ -1,10 +1,12 @@
 {
-    "plugins": ["prettier", "import"],
+    "plugins": ["prettier", "import", "@typescript-eslint"],
     "extends": [
         "plugin:prettier/recommended",
-        "prettier"
+        "prettier",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parserOptions": {
+        "parser": "@typescript-eslint/parser",
         "ecmaVersion": 2020,
         "sourceType": "module"
     },
@@ -14,8 +16,10 @@
         "node": true
     },
     "rules": {
+        "prettier/prettier": "error",
         "no-debugger": "off",
         "no-console": 0,
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "@typescript-eslint/no-explicit-any": "off"
     }
 }
