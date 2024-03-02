@@ -17,6 +17,7 @@ export interface INewsSource {
 export interface INewsResponse {
     status: string;
     source: INewsSource[];
+    
 }
 
 export interface INewsArticles {
