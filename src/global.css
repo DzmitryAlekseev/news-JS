@@ -1,6 +1,7 @@
 body {
     color: #fff;
-    background: #17181c;
+    /* background: #17181c; */
+    background: #000f4ace;
     font-family: sans-serif;
 }
 
@@ -21,15 +22,61 @@ footer {
 }
 footer .copyright {
     font-size: 14px;
-    color: #333;
+    /* color: #333; */
+    color: #000000;
     text-align: center;
 }
 footer .copyright a {
-    color: #444;
+    /* color: #444; */
+    color: #000000;
 }
 footer .copyright a:hover {
     color: #555;
 }
 footer .copyright:before {
     content: '©';
+}
+
+.logo__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #b6b6b63d;
+}
+
+.logo {
+    background-image: url('https://rs.school/images/rs_school_js.svg');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 40px; 
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.git {
+    list-style-type: none;
+    padding: 0;
+}
+
+.git__logo {
+    /* background-image: url(../img/logo\ git.svg); */
+    background-repeat: no-repeat;
+    padding: 0;
+    padding-left: 25px;
+}
+
+.git__logo a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+footer p {
+    height: fit-content;
+    margin: 0;
+    color:aliceblue;
 }
